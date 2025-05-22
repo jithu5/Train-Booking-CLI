@@ -8,8 +8,19 @@ public class User {
     private  String hashPassword;
     private List<Ticket> ticketsBooked;
     private  String userId;
-    public static void main(String[] args) {
 
+    // Default constructor (required by Jackson)
+    public User() {}
+        // Getters
+        public String getName() {
+            return name;
+        }
 
-    }
+        public String getPassword() {
+            return password;
+        }
+
+        public String getHashPassword() {
+            return hashPassword;
+        }
 }
