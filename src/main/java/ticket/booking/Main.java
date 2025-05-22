@@ -22,7 +22,7 @@ public class Main {
         try{
             userBookingService = new UserBookingService();
         }catch (IOException ex){
-            System.out.println("There is something wrong");
+            System.out.println("There is something wrong"+ex);
             return;
         }
         while (option!=7){
